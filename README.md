@@ -1,42 +1,70 @@
-# Lab: Bookstore Manager
+# Lab: Async Posts Fetcher (DOM + API + Async/Await)
+## AUTHOR - SAFIA BULLE
 
-## Introduction
+## 3.1: Title and Description
 
-You are working for a social media website, they need to build functionality to display random posts to the user for a random tab they have. In order to do this they need you to access an external api to gather all the post then loop through and display those posts.
+# Async Posts Fetcher
+A JavaScript project that fetches posts from an external API and dynamically displays them on a webpage using DOM manipulation and async/await. The project demonstrates how to work with APIs, handle asynchronous operations, and update the UI in real time.
 
-## Challenge
-1. Access external api and 
-2. Display post 
-3. Use Async/await
+---
 
-## Instructions
+## 3.2: Table of Contents
 
-1. **Fork and Clone the Repository:**
-   - Go to the provided GitHub repository link.
-   - Fork the repository to your GitHub account.
-   - Clone the forked repository to your local machine.
-   - Open the project in VSCode.
-   - Run `npm install` to install all necessary dependencies.
-
-2. **Fetch Data from an API**
-   - Using the fetch method fetch to https://jsonplaceholder.typicode.com/posts
-
-3. **Display Posts**
-   - Create Function to Display Posts called `displayPosts()` 
-      - Pass in the array of posts
-      - Loop through the posts list, in the loop:
-         - Create an `li` element
-         - Create an `h1` element 
-            - Set textContent to the title of the post
-         - Create an `p` element
-            - Set textContent to the body of the post         
-         - Append h1 and p to li
-         - Append li to the ul
-            - ul has an id of `post-list`   
-   - Call `displayPosts()` after fetch
-
-4. **Refactor with Async/Await**
-   - Create function to house fetch and apply async to function
-   - Apply await to fetch
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
+- [License](#license)
 
 
+---
+
+## 3.3: Installation
+
+Follow these steps to run the project locally:
+
+1. Clone the repository:
+
+git clone git@github.com:safiabulle/lab-async-await.git
+2. Navigate into the project folder:
+cd async-posts-fetcher
+3. Install dependencies:
+npm install
+4. Open the project in VSCode and run it using a live server or browser.
+
+## Usage
+
+To run the project, simply open the main JavaScript file or start your development server.
+
+## Features
+Fetch data from external API (JSONPlaceholder)
+Display posts dynamically using DOM manipulation
+Uses async/await for cleaner asynchronous code
+Error handling using try/catch
+Clears old posts before rendering new ones
+
+## API Reference
+
+This project uses the JSONPlaceholder API:
+
+https://jsonplaceholder.typicode.com/posts
+
+
+## Contributing
+
+If you want to contribute to this project:
+
+Fork the repository.
+Create a new branch:
+git checkout -b feature-name
+Make your changes.
+Commit your changes:
+git commit -m "Add new feature"
+Push to GitHub:
+git push origin feature-name
+Open a pull request.
+
+## License
+none
